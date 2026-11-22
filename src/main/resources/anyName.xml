@@ -5,6 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="Second" class="com.pulkit.learning.Second"></bean>
-
+    <bean id="second" class="com.pulkit.learning.Second">
+        <property name="obj" ref="third"></property>
+    </bean>
+    <bean id="third" class="com.pulkit.learning.Third"></bean>
 </beans>
