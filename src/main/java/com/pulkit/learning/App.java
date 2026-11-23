@@ -9,7 +9,6 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("anyName.xml");
-        Second obj1 = (Second) context.getBean("second");
-        obj1.callThirdClass();
+        User obj = (User) context.getBean("user");
     }
 }

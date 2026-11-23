@@ -5,8 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="second" class="com.pulkit.learning.Second">
-        <property name="obj" ref="third"></property>
+    <bean id="user" class="com.pulkit.learning.User">
+        <constructor-arg ref="desktop"></constructor-arg>
     </bean>
-    <bean id="third" class="com.pulkit.learning.Third"></bean>
+    <bean id="computer" class="com.pulkit.learning.Computer" abstract="true"></bean>
+    <bean id="laptop" class="com.pulkit.learning.Laptop"></bean>
+    <bean id="desktop" class="com.pulkit.learning.Desktop"></bean>
 </beans>
